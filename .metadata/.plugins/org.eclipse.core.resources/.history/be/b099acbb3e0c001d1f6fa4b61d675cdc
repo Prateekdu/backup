@@ -1,0 +1,19 @@
+package com;
+
+public class AccessSpecifiers1 {
+	private A()
+	{
+		
+	}
+	void msg(){
+		System.out.println("a "+a);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A obj=new A();
+		
+
+	}
+
+}

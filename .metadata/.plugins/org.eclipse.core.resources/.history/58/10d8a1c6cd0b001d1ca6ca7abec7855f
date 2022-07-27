@@ -1,0 +1,30 @@
+package com;
+class Task implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Thread tt =Thread.currentThread();
+		for(int i=0;i<=10;i++)
+		{
+			System.out.println("tt:"+i);
+		}
+		
+	}
+	
+}
+public class MultipleThreadDoingSameTask {
+	public static void main(String args[])
+	{
+		Thread tt =Thread.currentThread();
+		Runnable t=new Task(); // run time polymorphism
+		Thread t1= new Thread(t);
+		Thread t2= new Thread(t);
+		Thread t3= new Thread(t);
+		System.out.println(tt);
+		t1.start();
+		t2.start();
+		t3.start();
+	}
+	
+}

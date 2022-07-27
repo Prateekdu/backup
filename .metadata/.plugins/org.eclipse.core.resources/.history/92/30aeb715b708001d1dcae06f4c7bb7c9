@@ -1,0 +1,33 @@
+package code;
+interface team1{
+	public int add(int x,int y);
+}
+interface team2{
+	public int sub(int x,int y);
+}
+class manager implements team1,team2{
+	public int add(int x,int y)
+	{
+		return x+y;
+	}
+	public int sub(int x,int y)
+	{
+		return x-y;
+	}
+	public void ownMethod() {
+		System.out.println("manager own method");
+	}
+}
+
+public class test3 {
+	public static void main(String args[])
+	{
+		manager m=new manager();
+		System.out.println(m.add(100,50));
+		System.out.println(m.sub(100,50));
+		m.ownMethod();
+		team1 t1=new manager();
+		System.out.println(t1.add(100,60));
+	}
+
+}

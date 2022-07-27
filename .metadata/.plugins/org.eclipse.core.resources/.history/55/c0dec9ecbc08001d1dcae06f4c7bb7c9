@@ -1,0 +1,37 @@
+package ThisAndSuperConcepts;
+class employee{
+	int id;
+	String name;
+	float salary;
+	public employee() {
+		this.id=123;
+		this.name="prateek";
+		this.salary=1800;
+	}
+	public employee(int id) {
+		this.id=id;
+//		this.name="prateek";
+//		this.salary=1800;
+	}
+	public employee(String name,int id) {
+		this.id=id;
+		this.name=name;
+		this.salary=1800;
+	}
+	void disc() {
+	System.out.println("id is "+id);	
+	System.out.println("name is "+name);	
+	System.out.println("salary is "+salary);	
+	}
+}
+public class SuperAndThisParameterExample {
+ public static void main(String args[])
+ {
+	 employee emp=new employee();
+	 emp.disc();
+//	 employee emp1=new employee(1);
+//	 emp1.disc();
+//	 employee emp3=new employee("ravi",7);
+//	 emp3.disc();
+ }
+}

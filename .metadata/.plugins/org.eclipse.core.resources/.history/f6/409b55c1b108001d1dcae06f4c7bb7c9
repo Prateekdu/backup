@@ -1,0 +1,27 @@
+package code;
+class A11{
+	void dis1()
+	{
+		System.out.println("A class dis1 method");
+	}
+}
+class c34 extends A11{
+	void dis1() {
+		System.out.println("A class dis1 method override by b class");
+	}
+	void dis2() {
+		System.out.println("b class dis2 method");
+	}
+}
+public class test1 {
+	public static void main(String args[])
+	{
+		A11 ob1=new A11();	
+		ob1.dis1();
+		c34 ob2=new c34();  
+		ob2.dis1();  
+//		ob2.dis2();
+//		a obj4=new b();
+	}
+
+}

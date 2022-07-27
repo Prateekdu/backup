@@ -1,0 +1,18 @@
+// call by value 
+public class methodCall {
+	int val=15;
+	int operation(int x)
+	{
+		val=val*100;
+		return(val);
+	}
+}
+
+	public static void main(String args[])
+	{
+		methodCall cm=new methodCall();
+		cm.operation(10);
+		System.out.println(val);
+		
+	}
+

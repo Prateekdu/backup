@@ -1,0 +1,26 @@
+package code;
+
+public class infoc {
+	int a;
+	static int b;
+	void display() {
+		System.out.println("instance variable"+a);
+		System.out.println("static variable"+b);
+		
+	}
+}
+public class info{
+	public static void main(String args[])
+	{
+		infoc p=new infoc();
+		infoc p2=new infoc();
+		p.a=10;
+		p.b=20;
+		infoc.b=30;
+		p2.a=40;
+		p2.b=50;
+		infoc.b=60;
+		p.display();
+		p2.display();
+	}
+}

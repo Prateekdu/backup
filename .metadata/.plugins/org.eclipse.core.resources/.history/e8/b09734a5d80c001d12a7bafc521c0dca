@@ -1,0 +1,39 @@
+
+public class LongestIncreasingSubsequence {
+	static int l;
+	static int str(int arr[],int n)
+	{
+		if(n==1)
+		{
+			return 1;
+		}
+		int r,max_end=1;
+		for(int i=1;i<n;i++)
+		{
+			r=str(arr,i);
+			if(arr[i-1]<arr[n-1] && r+1> max_end)
+			{
+				max_end=r+1;
+			}
+		}
+		if(l<max_end)
+		{
+			l=max_end;
+		}
+		return max_end;
+		static int lis(int arr[],int n)
+		{
+			l=1;
+			lis(arr,n);
+			return l;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		int arr[]= {2,5,8,9,69,15,10,70};
+		int n=arr.length;
+		System.out.println("Length of longest increasing subsequence :"+ lis(arr,n));
+
+	}
+
+}

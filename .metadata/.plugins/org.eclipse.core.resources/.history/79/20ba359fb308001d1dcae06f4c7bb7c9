@@ -1,0 +1,27 @@
+package mno;
+abstract class A11{
+	abstract void dis1()
+	{
+		System.out.println("A class dis1 method");
+	}
+}
+class B1 extends A11{
+	void dis1() {
+		System.out.println("A class dis1 method override by b class");
+	}
+	void dis2() {
+		System.out.println("b class dis2 method");
+	}
+}
+public class test2 {
+	public static void main(String args[])
+	{
+		//A11 ob1=new A11();
+		B1 ob2=new B1(); 
+		ob2.dis1();
+		ob2.dis2();
+		
+		
+	}
+
+}

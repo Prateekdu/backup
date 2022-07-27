@@ -1,0 +1,18 @@
+package com;
+
+import java.util.HashMap;
+import java.util.Map;
+public class MapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<K, V> m=new HashMap();
+		m.put(2, "ravi");
+		m.put(1, "Ajay");
+		m.put(3, "Jerry");
+		m.put(4, "Jack");
+		System.out.println(m);
+		
+	}
+
+}

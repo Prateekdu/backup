@@ -1,0 +1,29 @@
+package code;
+interface abc{
+	int a=10;
+	void dis1();
+}
+interface efg{
+	int b=20;
+	void dis2();
+}
+interface xyz extends abc,efg{
+	int c=30;
+	void dis3();
+}
+class intera implements abc,efg{
+ public void dis1() {
+	 System.out.println("this is abc interface method");
+ }
+ public void dis2() {
+	 System.out.println("this is efg interface method");
+ }
+}
+public class inter{
+	public static void main(String args[])
+	{
+		intera in=new intera();
+		in.dis1();
+		in.dis2();	
+		}
+}
